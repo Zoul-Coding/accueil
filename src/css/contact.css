@@ -1,0 +1,111 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue: rgb(5, 16, 161);
+    --bluesombre: rgb(37, 51, 253);
+    --black: #6d6c6c;
+    --backGround: #0c0c0c;
+    --green: rgb(18, 173, 18);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* login form */
+h2 {
+    color: #000;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    padding: 20px 0;
+}
+
+form {
+   
+}
+
+.formulaire {
+    padding: 30px;
+}
+
+.input_nom,
+.input_prenom,
+.input_telephone,
+.input_pays, 
+.input_profession, 
+.input_eglise, 
+.input_message {
+    padding: 5px 0;
+}
+
+.input_nom input,
+.input_prenom input,
+.input_telephone input,
+.input_pays input, 
+.input_profession input, 
+.input_eglise input, 
+.input_message textarea {
+    width: 100%;
+    height: 40px;
+    margin: 5px 0;
+    border: 1px solid #c9c7c7;
+    outline: none;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 14px;
+    font-family: Poppins;
+}
+
+.input_email input:focus {
+    border: 2px solid var(--blueClaire);
+}
+
+.input_password input:focus {
+    border: 2px solid var(--blueClaire);
+}
+
+.input_nom input:focus {
+    border: 2px solid var(--blueClaire);
+}
+
+.input_prenom input:focus {
+    border: 2px solid var(--blueClaire);
+}
+
+.input_nom label,
+.input_prenom label,
+.input_email label,
+.input_password label {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.button_submit button {
+    width: 350px;
+    height: 50px;
+    margin: 5px 0;
+    background: var(--blue);
+    outline: none;
+    border-radius: 5px;
+    padding: 0 10px;
+    color: #fff;
+    border: none;
+    font-size: 17px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.button_submit button:hover {
+    background: var(--blue);
+}
